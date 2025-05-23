@@ -1,5 +1,5 @@
 // 🔗 Base URL for all API calls
-const BASE_URL = "https://job-portal-backend-y17c.onrender.com/api";
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 export default BASE_URL;
 

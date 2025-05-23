@@ -41,11 +41,8 @@ app.use("/api", applicationRoutes);
 
 
 // Connect to MongoDB
-mongoose.connect("mongodb://localhost:27017/resumeAI", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-
-}).then(() => console.log("MongoDB connected"))
+mongoose.connect(MONGO_URI)
+  .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log("MongoDB error:", err));
 mongoose.connection.once("open", () => {
   console.log("✅ Connected to MongoDB");

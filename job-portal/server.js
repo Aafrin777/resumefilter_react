@@ -21,6 +21,7 @@ const applicationRoutes = require("./routes/Application_2");
 
 dotenv.config();// ✅ Load environment variables from .env file
 
+
 // ✅ Initialize Express app
 const app = express();
 
@@ -41,6 +42,8 @@ app.use("/api", applicationRoutes);
 
 
 // Connect to MongoDB
+const MONGO_URI = process.env.MONGO_URI;// <-- Declare MONGO_URI here BEFORE using it
+
 mongoose.connect(MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log("MongoDB error:", err));
@@ -50,7 +53,7 @@ mongoose.connection.once("open", () => {
 
 // ✅ Get values from environment variables
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI;
+
 // || "mongodb://localhost:27017/jobPortal";
 
 

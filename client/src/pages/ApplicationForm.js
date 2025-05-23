@@ -48,7 +48,7 @@ const ApplicationForm = () => {
 
     try {
       const res = await axios.post(
-        "https://job-portal-backend-9qnv.onrender.com/api/apply",
+        "https://job-portal-backend-m74d.onrender.com/api/apply",
         formDataToSubmit,
         { headers: { "Content-Type": "multipart/form-data" } }
       );

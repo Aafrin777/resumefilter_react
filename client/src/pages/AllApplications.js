@@ -14,7 +14,7 @@ const AllApplications = () => {
 
   // 📦 Fetch Applications
   useEffect(() => {
-    axios.get("https://job-portal-backend-9qnv.onrender.com/api/applications").then((res) => {
+    axios.get("https://job-portal-backend-m74d.onrender.com/api/applications").then((res) => {
       setApplications(
         res.data.map((app) => ({
           ...app,
@@ -135,7 +135,7 @@ const AllApplications = () => {
 
     try {
       const res = await axios.put(
-  `https://job-portal-backend-9qnv.onrender.com/api/applications/shortlist/${selectedApp._id}`,
+  `https://job-portal-backend-m74d.onrender.com/api/applications/shortlist/${selectedApp._id}`,
   { shortlisted: true }
 );
 
@@ -321,14 +321,14 @@ const AllApplications = () => {
                   {/* 📄 Resume */}
                   <td>
 <a
-  href={`https://job-portal-backend-9qnv.onrender.com/${app.resumePath}`}
+  href={`https://job-portal-backend-m74d.onrender.com/${app.resumePath}`}
   target="_blank"
   rel="noopener noreferrer"
 >
   View Resume
 </a>
 <a
-  href={`https://job-portal-backend-9qnv.onrender.com/${app.resumePath}`}
+  href={`https://job-portal-backend-m74d.onrender.com/${app.resumePath}`}
   download
   className="text-blue-600 underline"
 >

@@ -52,7 +52,7 @@ const handleChange = (e) => {
 
     try {
       const res = await axios.post(   //On form submit, you send data to backend using
-        "http://localhost:5000/api/auth/login",
+        "https://job-portal-backend-y17c.onrender.com/api/auth/login",
         formData,
         {
           headers: {

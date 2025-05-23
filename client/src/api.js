@@ -1,5 +1,5 @@
 // 🔗 Base URL for all API calls
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://job-portal-backend-y17c.onrender.com/api";
 
 export default BASE_URL;
 

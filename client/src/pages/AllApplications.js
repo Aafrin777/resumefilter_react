@@ -14,7 +14,7 @@ const AllApplications = () => {
 
   // 📦 Fetch Applications
   useEffect(() => {
-    axios.get("http://localhost:5000/api/applications").then((res) => {
+    axios.get("https://job-portal-backend-y17c.onrender.com/api/applications").then((res) => {
       setApplications(
         res.data.map((app) => ({
           ...app,
@@ -135,9 +135,10 @@ const AllApplications = () => {
 
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/applications/shortlist/${selectedApp._id}`,
-        { shortlisted: true }
-      );
+  `https://job-portal-backend-y17c.onrender.com/api/applications/shortlist/${selectedApp._id}`,
+  { shortlisted: true }
+);
+
 
       const updatedApplications = [...applications];
       updatedApplications[index] = res.data;
@@ -319,20 +320,21 @@ const AllApplications = () => {
 
                   {/* 📄 Resume */}
                   <td>
-                    <a
-                      href={`http://localhost:5000/${app.resumePath}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Resume
-                    </a>
-                    <a
-  href={`http://localhost:5000/${app.resumePath}`}
+<a
+  href={`https://job-portal-backend-y17c.onrender.com/${app.resumePath}`}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  View Resume
+</a>
+<a
+  href={`https://job-portal-backend-y17c.onrender.com/${app.resumePath}`}
   download
   className="text-blue-600 underline"
 >
   Download
 </a>
+
 
                   </td>
 

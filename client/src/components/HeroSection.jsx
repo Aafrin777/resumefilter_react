@@ -14,7 +14,7 @@ const HeroSection = () => {
             Revolutionize Your Hiring with <span>AI</span>
           </h1>
           <p className="hero-subtitle">
-            Smart Resume Screening that saves your time & hires the right talent.
+            Smart Resume Screening that saves your time & hires the right talent.(Aafrin Parveen)
           </p>
           <div className="hero-buttons">
             <Link to="/register" className="btn-primary">Get Started</Link>

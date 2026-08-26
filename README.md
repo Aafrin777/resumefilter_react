@@ -4,7 +4,7 @@ A full-stack Job Portal application that connects job seekers with employers and
 
 Candidates can create accounts, browse/apply for jobs, submit resumes, and track applications. Employers can manage job opportunities, review applicants, filter candidates by skills, and use resume match scores to identify suitable candidates faster.
 
-🔗 **Live Backend API:** https://job-portal-backend-m74d.onrender.com
+🔗 **Live Backend API:** https://job-portal-frontend-final.onrender.com
 
 🔗 **GitHub:** https://github.com/Aafrin777/resumefilter_react
 
